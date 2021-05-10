@@ -1,0 +1,43 @@
+
+/* How To Use */
+.parent-container {
+    width: 100%;
+    /* height: 21vw; */
+    /* margin-bottom: 30px;  */
+  }
+  
+  .left-container {
+    float: left;
+    /* height: 21vw; */
+    /* width: 50%; */
+  }
+  
+  .right-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 21vw;
+    background: #fff;
+    width: 50%;
+    float: left;
+    margin-left: 60px;
+  }
+  
+  .left-content {
+    width: 100%;
+    /* height: 21vw; */
+  }
+  
+  .right-content {
+    max-width: 70%;
+  }
+  
+  
+  @media screen and (max-width: 999px) {
+    .parent-container {display: block; width: 100%; height: auto; text-align: center; margin: 0 auto 60px auto;}
+    .left-container  {display: block; width: 100%; height: auto; float: none; text-align: center; margin: 15px auto 0px auto;}
+    .right-container {display: block; width: 100%; height: auto; float: none; text-align: center; margin: 15px auto 0px auto;}
+    .left-content {display: block; width: 100%; height: auto; float: none; text-align: center; margin: 15px auto 0px auto;}
+    .right-content {display: block; width: 100%; height: auto; float: none; text-align: center; margin: 15px auto 0px auto; max-width: 90%;}
+  }
+    
