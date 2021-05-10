@@ -1,32 +1,36 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
-   height: 100vh;
-   `
-   
-   export const CardList = styled.div`
-   overflow-y:scroll;
-    display:flex;
-    place-items:center;
-    justify-content: space-evenly;
-    max-width: 100vw;
-    height:100%;
-    flex-wrap:wrap;
-    padding-top: 13px;
+  height: 100vh;
+`;
+
+export const CardList = styled.div`
+  overflow-y: scroll;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+  max-width: 100vw;
+  height: 100%;
+  flex-wrap: wrap;
+  padding-top: 13px;
 `;
 
 export const CardItem = styled.div`
   max-width: 320px;
   min-width: 160px;
   width: 100%;
-  height: 400px;
+  height: auto;
   background: white;
   box-shadow: 8px 8px 16px #000;
-  padding:32px;
-  margin-bottom:32px;
-  margin-right:6px;
-  margin-left:6px;
+  padding: 32px;
+  margin-bottom: 32px;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 40px;
+  grid-column-gap: 0px;
+  grid-row-gap: 4px;
 `;
 
 export const CardImage = styled.div`
@@ -46,7 +50,6 @@ export const CardContent = styled.div`
 `;
 
 export const CardFooterItem = styled.div`
-  padding: 4px;
   button {
     font-size: 14px;
     appearance: none;
@@ -54,7 +57,6 @@ export const CardFooterItem = styled.div`
     word-break: keep-all;
     cursor: pointer;
     line-height: 1;
-    position: relative;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px;
     opacity: 1;

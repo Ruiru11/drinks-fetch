@@ -25,6 +25,8 @@ const DrinkView = ({ data, showCockTail }) => {
                 </CardImage>
                 <CardContent>
                   <h1>hey</h1>
+                  <h1>hey</h1>
+                  <h1>hey</h1>
                 </CardContent>
 
                 <CardFooterItem>
