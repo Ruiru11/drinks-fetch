@@ -1,9 +1,14 @@
+import { Switch, BrowserRouter, Route } from 'react-router-dom'
+import Hero from './components/Hero'
+
 
 function App() {
   return (
-    <>
-    <div><text> Hello world</text></div>
-    </>
+    <BrowserRouter>
+    <Switch>
+      <Route path='/' component={Hero} exact />
+    </Switch>
+  </BrowserRouter>
   );
 }
 
