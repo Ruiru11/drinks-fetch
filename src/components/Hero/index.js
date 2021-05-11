@@ -56,7 +56,7 @@ const Hero = () => {
         <DrinkView  data={popularData} showCockTail={showCockTail} />
       </Content>
 
-      <Footer style={{ textAlign: "center" }}>Cocktails here 2021</Footer>
+      <Footer style={{ textAlign: "center" }}>  You love to drink? So do we ..Hold your glasses up</Footer>
     </Layout>
   );
 };
