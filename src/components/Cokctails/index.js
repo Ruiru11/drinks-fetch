@@ -19,19 +19,19 @@ const DrinkView = ({ data, showCockTail }) => {
               <CardItem key={i}>
                 <CardImage>
                   <img
-                    src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                    src={drink.strDrinkThumb}
                     alt="sata"
                   />
                 </CardImage>
                 <CardContent>
-                  <h1>hey</h1>
-                  <h1>hey</h1>
-                  <h1>hey</h1>
+                  <h1>{drink.strDrink}</h1>
+                  <p>Category:{drink.strCategory}</p>
+                  <p>Alcoholic/Non-alcoholic:{drink.strAlcoholic}</p>
                 </CardContent>
 
                 <CardFooterItem>
                   <button onClick={() => showCockTail(data.idDrink)}>
-                   More
+                    More
                   </button>
                 </CardFooterItem>
               </CardItem>
