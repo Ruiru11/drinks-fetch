@@ -30,7 +30,7 @@ const DrinkView = ({ data, showCockTail }) => {
                 </CardContent>
 
                 <CardFooterItem>
-                  <button onClick={() => showCockTail(data.idDrink)}>
+                  <button onClick={() => showCockTail(drink.idDrink)}>
                     More
                   </button>
                 </CardFooterItem>

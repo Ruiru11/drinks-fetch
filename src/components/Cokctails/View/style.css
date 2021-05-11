@@ -9,22 +9,22 @@
   .left-container {
     float: left;
     /* height: 21vw; */
-    /* width: 50%; */
+    width: 50%;
   }
   
   .right-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 21vw;
+    height: auto;
     background: #fff;
     width: 50%;
     float: left;
-    margin-left: 60px;
+    /* margin-left: 60px; */
   }
   
   .left-content {
-    width: 100%;
+    width: 50%;
     /* height: 21vw; */
   }
   

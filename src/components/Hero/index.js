@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Layout } from "antd";
 import HeaderItem from "../header";
 import DrinkView from "../Cokctails";
@@ -13,7 +14,7 @@ const Hero = () => {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const { data: popularData, loading: loadingPopular } = useSelector(
+  const { data: popularData,  } = useSelector(
     (state) => state.popular
   );
   const { data: random } = useSelector((state) => state.random);
@@ -34,7 +35,6 @@ const Hero = () => {
 
   const getRandomDrink = () => {
     dispatch(fetchRandom());
-    console.log("here");
   };
   const bannerImg =
     "https://res.cloudinary.com/dxecwuaqd/image/upload/v1620670701/tc-champagne-brands-2-1544808366.jpg";
@@ -53,7 +53,7 @@ const Hero = () => {
         >
           <h1>Popular drinks </h1>
         </div>
-        <DrinkView showCockTail={showCockTail} data={popularData} />
+        <DrinkView  data={popularData} showCockTail={showCockTail} />
       </Content>
 
       <Footer style={{ textAlign: "center" }}>Cocktails here 2021</Footer>
